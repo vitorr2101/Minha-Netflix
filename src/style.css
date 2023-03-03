@@ -1,0 +1,211 @@
+
+
+body{
+font-family: 'Noto Sans', sans-serif;
+background: black;
+position:relative ;
+}
+
+.flex-container-menu{
+	display: flex;
+	background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9) 5%,
+      rgba(0, 0, 0, 0.2) 20%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.8) 90%),
+	  url(../img/banner-destaque.png) ;
+  	height: 100vh;
+  	background-size: cover;
+  	display: flex;
+
+}
+
+.img-logo-netflix{
+    height: 50px;
+  	width: 100px;
+  	height: 50px;
+  	margin-top: -15px;
+  	display: flex;
+  	align-self: flex-start;
+}
+
+.flex-item-menu{
+	color: white; 
+	margin: 25px 15px 15px 15px;
+	height: 30px;
+	display: inline-flex;
+	cursor: pointer;
+}
+
+.flex-item-menu.img-user-icon ,.flex-item-menu.img-notification-icon ,.flex-item-menu.img-search-icon  {
+width: 30px;
+height: 30px;
+}
+
+.flex-item-menu.item-user.img-search-icon{
+	margin-left: 600px;
+}
+
+/*Minha Lista*/
+
+.titulo-lista {
+	font-size: 22px;
+	display: block;
+	padding: 4px;
+	color: white;
+	font-weight: 400;
+}
+
+.container-lista{
+	display: flex;
+	align-content: space-between;
+
+}
+
+.container-lista ul{
+	display: inline-flex;
+	
+}
+
+.imagens-lista{
+	margin: 5px;
+	width: 96%;	
+}
+
+.container-lista li:hover{
+	transform: scale(1.2);
+	transition: 1s;
+	cursor: pointer;
+	margin: 0 40px 40px 40px;
+}
+
+/*Em alta Carossel*/
+
+.container-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+
+.imagens-segunda-lista{
+	margin: 5px;
+	width: 96%;	
+/*	visibility: hidden;*/
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+/*  margin-top: -22px;*/
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;	
+/*  align-items: center;*/
+  position: absolute;
+  align-self: center;
+  z-index: 1;
+}
+
+
+.next {
+	border-radius: 3px 0 0 3px;
+	left: 97%;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Footer*/
+footer {
+
+  margin-top: 2rem;
+}
+   
+.social-links {
+	color: white;
+	margin-left: 15px;
+  height: 25px;
+  width: 50%;
+  
+}
+
+.redes{
+font-size: 22px;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.link-content {
+  margin: 20px auto;
+  color: grey;
+  color: white;
+}
+
+.link-content__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5em;
+  margin-left: 15px;
+}
+
+.link-content__grid ul {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  padding: initial;
+}
+
+.link-content__grid ul li {
+  list-style: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.link-content__grid ul li:hover {
+  text-decoration: underline;
+}
+
+.link-content__service {
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.link-content__service-code {
+  background: 0 0;
+  color: grey;
+  border: solid 1px grey;
+  padding: 0.5rem;
+}
+
+.link-content__service-code:hover {
+  color: white;
+  border: solid 1px white;
+}
+
+.link-content__copyright {
+	color: white;
+	margin-left: 15px;
+  font-size: 11px;
+  margin-bottom: 15px;
+  padding: 1rem 4px;
+}
+
